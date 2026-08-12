@@ -1,5 +1,7 @@
 package tests;
 
+import com.codeborne.selenide.ClickOptions;
+
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
@@ -63,11 +65,12 @@ public class SauceDemoTests extends TestBase {
         });
 
         step("Добавить рюкзак в корзину", () -> {
-            $("#add-to-cart-sauce-labs-backpack").click();
+            // Используем data-test селектор
+            $("[data-test='add-to-cart-sauce-labs-backpack']").shouldBe(visible).click();
         });
 
         step("Проверить счетчик товаров на иконке корзины", () -> {
-            $(".shopping_cart_badge").shouldBe(visible).shouldHave(text("1"));
+            $("[data-test='shopping-cart-badge']").shouldBe(visible).shouldHave(text("1"));
         });
     }
 
@@ -104,7 +107,8 @@ public class SauceDemoTests extends TestBase {
 
         step("Открыть боковое меню и нажать Logout", () -> {
             $("#react-burger-menu-btn").click();
-            $("#logout_sidebar_link").click(com.codeborne.selenide.ClickOptions.usingJavaScript());
+            sleep(500); // Даем анимации меню 0.5с для выезда
+            $("#logout_sidebar_link").click(ClickOptions.usingJavaScript());
         });
 
         step("Проверить возврат на форму входа", () -> {
