@@ -7,8 +7,10 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class TestBase {
@@ -18,20 +20,34 @@ public class TestBase {
         Configuration.baseUrl = "https://www.saucedemo.com";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.timeout = 10000;
+        Configuration.timeout = 5000;
+
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-popup-blocking");
+        chromeOptions.addArguments("--disable-save-password-bubble");
+
+        Map<String, Object> prefs = new HashMap<>();
+        prefs.put("credentials_enable_service", false);
+        prefs.put("profile.password_manager_enabled", false);
+        prefs.put("profile.password_manager_leak_detection", false);
+        chromeOptions.setExperimentalOption("prefs", prefs);
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         String remoteUrl = System.getProperty("remoteUrl");
         if (remoteUrl != null && !remoteUrl.trim().isEmpty()) {
             Configuration.remote = remoteUrl;
 
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setCapability("selenoid:options", Map.of(
-                    "enableVNC", true,
-                    "enableVideo", true,
-                    "sessionTimeout", "3m"
-            ));
-            Configuration.browserCapabilities = capabilities;
+            Map<String, Object> selenoidOptions = new HashMap<>();
+            selenoidOptions.put("enableVNC", true);
+            selenoidOptions.put("enableVideo", true);
+            selenoidOptions.put("sessionTimeout", "2m");
+
+            capabilities.setCapability("selenoid:options", selenoidOptions);
         }
+
+        Configuration.browserCapabilities = capabilities;
     }
 
     @BeforeEach
