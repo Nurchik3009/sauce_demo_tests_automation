@@ -1,14 +1,15 @@
 {
   "base": {
-    "logo": "https://allurereport.org/images/allure-report-logo.png",
     "project": "SauceDemo UI Tests",
     "environment": "Selenoid / Chrome",
-    "comment": "Сборка UI тестов SauceDemo @AKaliakbarova",
-    "reportLink": "",
-    "language": "ru"
+    "comment": "Тесты SauceDemo @AKaliakbarova",
+    "reportLink": "${BUILD_URL}allure",
+    "language": "ru",
+    "allureFolder": "allure-report/",
+    "enableChart": true
   },
   "telegram": {
-    "token": "8986752688:AAEb5JZaQ9c10wK0EnxQZ-K1sxF8Sskgb2g",
+    "token": "8986752688:AAEb5JZaQ9c1OwK0EnxQZ-K1sxF8Sskgb2g",
     "chat": "848405839",
     "replyTo": ""
   }
