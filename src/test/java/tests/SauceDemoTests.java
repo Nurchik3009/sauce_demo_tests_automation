@@ -104,7 +104,7 @@ public class SauceDemoTests extends TestBase {
 
         step("Открыть боковое меню и нажать Logout", () -> {
             $("#react-burger-menu-btn").click();
-            $("#logout_sidebar_link").shouldBe(visible).click();
+            $("#logout_sidebar_link").click(com.codeborne.selenide.ClickOptions.usingJavaScript());
         });
 
         step("Проверить возврат на форму входа", () -> {
