@@ -9,9 +9,9 @@
 <p align="center">
   <img title="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" height="40"/>
   <img title="Gradle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="40" height="40"/>
-  <img title="Selenide" src="https://selenide.org/assets/images/selenide-logo-big.png" width="40" height="40"/>
+  <img title="Selenide" src="https://automated-testing.info/uploads/default/optimized/2X/2/24077aab4d490df8fa6dda41761a3545272c29c4_2_700x366.jpeg" width="40" height="40"/>
   <img title="JUnit5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" width="40" height="40"/>
-  <img title="Allure" src="https://allurereport.org/images/allure-report-logo.png" width="40" height="40"/>
+  <img title="Allure" src="https://conference.eurostarsoftwaretesting.com/wp-content/uploads/2023/08/Allure-Report-Logo.png" width="40" height="40"/>
   <img title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="40" height="40"/>
 </p>
 
@@ -68,10 +68,10 @@
 * **Video** — видеозапись прохождения теста из Selenoid.
 
 #### Шаги выполнения (@Step)
-![Allure Test Steps](doc/img/allure_steps.png)
+![Allure Test Steps](images/allure_steps.png)
 
 #### Автоматические артефакты и логи
-![Allure Attachments](doc/img/allure_attachments.png)
+![Allure Attachments](images/allure_attachments.png)
 
 ---
 
