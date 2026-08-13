@@ -1,6 +1,11 @@
-# Проект по автотестированию для SauceDemo UI Tests
+# Автоматизация UI-тестов для интернет-магазина Swag Labs 
 
-> Проект содержит автоматизированные UI-тесты для веб-приложения [SauceDemo](https://www.saucedemo.com/).
+![SauceDemo Application Interface](images/saucedemo_main.png)
+
+> Проект содержит автоматизированные UI-тесты для интернет-магазина **Swag Labs** на платформе [SauceDemo](https://www.saucedemo.com/).
+
+
+---
 
 ---
 
@@ -16,6 +21,7 @@
   <img title="GitHub" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPyt9o2vV7qbUzPXo1bet8BsmumaYMNWALTk29xdsx5A&s=10" width="40" height="40"/>
   <img title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="40" height="40"/>
   <img title="Telegram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1280px-Telegram_2019_Logo.svg.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=thumbnail" width="40" height="40"/>
+  <img title="Jira" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" width="40" height="40"/>
 </p>
 
 Тесты написаны на **Java** в среде **IntelliJ IDEA** с использованием фреймворка **Selenide** и тестового движка **JUnit 5**.
@@ -69,9 +75,8 @@
 
 ---
 
-##  <img title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="40" height="40"/> Интеграция с Jenkins и Allure
+##  <img title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="40" height="40"/> [Интеграция с Jenkins и Allure](https://jenkins.qa.guru/job/Kaliakbarova_sauce_demo_tests_automation/)
 
-Сборка тестов автоматически запускается в [Jenkins](https://jenkins.qa.guru/job/Kaliakbarova_sauce_demo_tests_automation/).
 
 ### Скриншот главной страницы джобы в Jenkins:
 ![Jenkins Job](images/jenkins_job.png)
@@ -95,7 +100,7 @@
 
 ---
 
-## 🟢 Интеграция с Allure TestOps
+## <img alt="Allure" height="25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8dFc6Spkz8v5xKkNLiyB5Hna4lUjdlrJuNef6eeRcw&s=10" width="40"/></a> [Интеграция с Allure TestOps](https://allure.qa.guru/project/5341/test-cases?treeId=10432)
 
 Результаты выполнения автотестов в Jenkins и покрытие функционала полностью интегрированы в **Allure TestOps**.
 
@@ -120,7 +125,7 @@
 
 ---
 
-## 🔹 Интеграция с Jira
+## <img alt="Allure" height="25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYtJveKp21NSDgD4HdsGihqfTnw9QxLslgNjHFtDXyXg&s=10" width="40"/></a> [Интеграция с Jira](https://jira.qa.guru/browse/REF-29)
 
 Реализована двухсторонняя интеграция **Allure TestOps** с **Jira**. В задаче отображается список покрытых автотестами кейсов, результаты их прогона и привязанные тест-планы.
 
