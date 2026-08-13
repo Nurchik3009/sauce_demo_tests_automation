@@ -43,18 +43,33 @@
 
 ## 💻 Запуск тестов из терминала
 
-### Локальный запуск:
-`gradle test`
+### Локальный запуск всех тестов:
+```
+`./gradlew clean test`
+```
 
 ### Удаленный запуск через Selenoid:
+```
 `gradle test -DremoteUrl=https://user1:1234@selenoid.qa.guru/wd/hub`
+```
+## 📊 Генерация и просмотр отчета Allure локально
+### Запуск тестов
+```
+./gradlew clean test
+```
 
-**Пояснение ключей:**
+### Сборка и открытие Allure-отчета в браузере
+```
+./gradlew allureServe
+```
+
+
+### Пояснение ключей:
 * `-DremoteUrl` — параметр, передающий URL удаленного сервера Selenoid для запуска браузера в контейнере.
 
 ---
 
-## 📊 Интеграция с Jenkins и Allure
+##  <img title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="40" height="40"/> Интеграция с Jenkins и Allure
 
 Сборка тестов автоматически запускается в [Jenkins](https://jenkins.qa.guru/job/Kaliakbarova_sauce_demo_tests_automation/).
 
