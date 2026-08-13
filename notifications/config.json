@@ -2,7 +2,7 @@
   "base": {
     "project": "SauceDemo UI Tests",
     "environment": "prod",
-    "comment": "Тесты SauceDemo @AKaliakbarova",
+    "comment": "SauceDemo UI Tests, @AKaliakbarova",
     "reportLink": "${BUILD_URL}allure/",
     "language": "ru",
     "allureFolder": "allure-report/",
