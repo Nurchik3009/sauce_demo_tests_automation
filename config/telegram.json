@@ -1,9 +1,9 @@
 {
   "base": {
     "project": "SauceDemo UI Tests",
-    "environment": "Selenoid / Chrome",
+    "environment": "prod",
     "comment": "Тесты SauceDemo @AKaliakbarova",
-    "reportLink": "${BUILD_URL}allure",
+    "reportLink": "${BUILD_URL}allure/",
     "language": "ru",
     "allureFolder": "allure-report/",
     "enableChart": true
