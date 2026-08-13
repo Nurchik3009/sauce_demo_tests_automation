@@ -47,9 +47,7 @@ public class SauceDemoTests extends TestBase {
         });
 
         step("Проверить появление сообщения об ошибке", () -> {
-            $("[data-test='error']")
-                    .shouldBe(visible)
-                    .shouldHave(text("Username and password do not match any user in this service"));
+            $("[data-test='error']").shouldBe(visible).shouldHave(text("Username and password do not match any user in this service"));
         });
     }
 
