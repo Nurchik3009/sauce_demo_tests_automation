@@ -71,7 +71,7 @@
 
 ##  <img title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="40" height="40"/> Интеграция с Jenkins и Allure
 
-Сборка тестов автоматически запускается в [Jenkins](https://jenkins.qa.guru/job/Kaliakbarova_sauce_demo_tests_automation/).
+Сборка тестов автоматически запускается в [Jenkins]([https://jenkins.qa.guru/job/Kaliakbarova_sauce_demo_tests_automation/](https://jenkins.qa.guru/view/java-students/job/Kaliakbarova_sauce_demo_tests_automation/)).
 
 ### Скриншот главной страницы джобы в Jenkins:
 ![Jenkins Job](images/jenkins_job.png)
