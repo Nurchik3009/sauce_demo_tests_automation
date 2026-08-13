@@ -95,6 +95,37 @@
 
 ---
 
+## 🟢 Интеграция с Allure TestOps
+
+Результаты выполнения автотестов в Jenkins и покрытие функционала полностью интегрированы в **Allure TestOps**.
+
+### 📊 Статистика и дашборд
+На главной странице дашборда отображается общая аналитика и соотношение автоматизированных и ручных тестов.
+
+![Allure TestOps Dashboards](images/testops_dashboards.png)
+
+---
+
+### 🚀 Запуски (Launches)
+В разделе запусков фиксируются результаты каждого прогона сборки из Jenkins.
+
+![Allure TestOps Launches](images/testops_launches.png)
+
+---
+
+### 📋 Управление тест-кейсами
+В системе ведется единый реестр тест-кейсов, включающий как автоматизированные UI-тесты, так и ручные сценарии.
+
+![Allure TestOps Test Cases](images/testops_testcases.png)
+
+---
+
+## 🔹 Интеграция с Jira
+
+Реализована двухсторонняя интеграция **Allure TestOps** с **Jira**. В задаче отображается список покрытых автотестами кейсов, результаты их прогона и привязанные тест-планы.
+
+![Jira Integration](images/jira_integration.png)
+
 ## <img alt="Allure" height="25" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1280px-Telegram_2019_Logo.svg.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=thumbnail" width="25"/></a>  Уведомления в Telegram
 
 После завершения сборки бот автоматически отправляет сводку с графиком и статусом прохождения в Telegram-чат:
