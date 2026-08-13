@@ -7,20 +7,25 @@
 ## 🛠 Технологический стек
 
 <p align="center">
+  <img title="IntelliJ IDEA" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" width="40" height="40"/>
   <img title="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" height="40"/>
-  <img title="Gradle" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-original.svg" width="40" height="40"/>
+  <img title="Gradle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROycnWhGgGUtR1sS3Q7jItsna7tU1C9a5duz4JIKS6Gg&s=10" width="40" height="40"/>
   <img title="Selenide" src="https://automated-testing.info/uploads/default/optimized/2X/2/24077aab4d490df8fa6dda41761a3545272c29c4_2_700x366.jpeg" width="40" height="40"/>
   <img title="JUnit5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" width="40" height="40"/>
-  <img title="Allure" src="https://conference.eurostarsoftwaretesting.com/wp-content/uploads/2023/08/Allure-Report-Logo.png" width="40" height="40"/>
+  <img title="Allure Report" src="https://conference.eurostarsoftwaretesting.com/wp-content/uploads/2023/08/Allure-Report-Logo.png" width="40" height="40"/>
+  <img title="GitHub" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPyt9o2vV7qbUzPXo1bet8BsmumaYMNWALTk29xdsx5A&s=10" width="40" height="40"/>
   <img title="Jenkins" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" width="40" height="40"/>
+  <img title="Telegram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1280px-Telegram_2019_Logo.svg.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=thumbnail" width="40" height="40"/>
 </p>
 
-Тесты написаны на **Java** с использованием фреймворка **Selenide** и тестового движка **JUnit 5**.
-* Для удаленного запуска используется **Selenoid** (Chrome).
+Тесты написаны на **Java** в среде **IntelliJ IDEA** с использованием фреймворка **Selenide** и тестового движка **JUnit 5**.
+
 * Сборщик проектов — **Gradle**.
-* Отчетность формируется с помощью **Allure Report**.
-* Непрерывная интеграция настроена в **Jenkins**.
-* Уведомления о результатах отправляются в **Telegram**.
+* Проект размещен и ведется в **GitHub**.
+* Для удаленного запуска тестов используется **Selenoid** (Chrome).
+* Отчетность о результатах тестирования формируется в **Allure Report**.
+* Непрерывная интеграция (CI/CD) настроена в **Jenkins**.
+* Автоматические уведомления о результатах сборки отправляются в **Telegram**.
 
 ---
 
@@ -75,7 +80,7 @@
 
 ---
 
-## 📱 Уведомления в Telegram
+## <img alt="Allure" height="25" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1280px-Telegram_2019_Logo.svg.png?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=thumbnail" width="25"/></a>  Уведомления в Telegram
 
 После завершения сборки бот автоматически отправляет сводку с графиком и статусом прохождения в Telegram-чат:
 
